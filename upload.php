@@ -15,7 +15,7 @@
 	$fileContent = fread(fopen($tempFileName,"r"), $fileSize);
 	
 	//Current ID
-	$curr_id = substr($_SERVER['QUERY_STRING'],-1);
+	$curr_id = $_GET["id"];
 	
 	// set server location (subdirectory) to store uploaded files
 	$fileLocation = "customer_img/";
